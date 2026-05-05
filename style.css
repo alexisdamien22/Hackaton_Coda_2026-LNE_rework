@@ -6,15 +6,10 @@
   font-style: normal;
 }
 
-a:link {
-  color: black;
+a {
+    text-decoration: none;
+    color: inherit;
 }
-
-/* visited link */
-a:visited {
-  color: black;
-}
-
 
 .sora {
   font-family: "Sora", sans-serif;
@@ -90,14 +85,16 @@ nav div span:hover {
 }
 
 .contact-nav {
-    text-decoration: none;
-    color: #000000;
+    background-color: #F9F8F2;
+    border-radius: 99px;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    transition: background-color 0.3s;
 }
 
 .contact-nav:hover {
-    text-decoration: underline;
-    cursor: pointer;
-
+    background-color: #28663A;
+    color: #D7FFE3;
 }
 
 .logo-nav {

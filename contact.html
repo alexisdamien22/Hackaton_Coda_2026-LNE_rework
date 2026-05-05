@@ -1,11 +1,171 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LNE</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - LNE</title>
+    <link rel="stylesheet" href="style2.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Sora:wght@100..800&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="picture"></div>
+    <div class="picture-blur"></div>
+    <nav>
+      <div class="logo-nav"><img src="logo.png" alt="" /></div>
+      <div class="main-nav">
+        <span>Éduquer</span>
+        <span><a href="loutre.html">Bibliothèque</a></span>
+        <span>La réserve</span>
+        <span>Nos actions</span>
+        <span>À propos</span>
+      </div>
+      <div class="contact-nav"><a href="index.html">Accueil</a></div>
+    </nav>
+    <div class="container">
+      <div class="hero-section">
+        <div class="hero-title">
+          Contactez-nous
+          <div class="hero-subtitle">
+            Une question ? Un projet ?<br />Nous sommes à votre écoute.
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-content">
+        <div class="contact-form-wrapper">
+          <div class="form-card">
+            <div class="form-header">Envoyez-nous un message</div>
+            <div class="contact-form">
+              <div class="form-group">
+                <label for="name">Nom complet</label>
+                <input type="text" id="name" name="name" placeholder="Jean Dupont" />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="jean.dupont@email.com" />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Téléphone</label>
+                  <input type="tel" id="phone" name="phone" placeholder="06 12 34 56 78" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Sujet</label>
+                <select id="subject" name="subject">
+                  <option value="">Sélectionnez un sujet</option>
+                  <option value="adhesion">Adhésion</option>
+                  <option value="evenement">Événement</option>
+                  <option value="partenariat">Partenariat</option>
+                  <option value="information">Demande d'information</option>
+                  <option value="autre">Autre</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" placeholder="Votre message..."></textarea>
+              </div>
+
+              <button class="submit-btn">
+                Envoyer le message
+                <img src="arrow-right.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-info">
+          <div class="info-card">
+            <div class="info-icon">📍</div>
+            <div class="info-content">
+              <div class="info-title">Adresse</div>
+              <div class="info-text">
+                Maison de la Nature et de l'Environnement<br />
+                64, route d'Olivet<br />
+                45100 Orléans
+              </div>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">📞</div>
+            <div class="info-content">
+              <div class="info-title">Téléphone</div>
+              <div class="info-text">
+                Tél : 02 38 56 69 84<br />
+                Fax : 02 38 56 33 48
+              </div>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">⏰</div>
+            <div class="info-content">
+              <div class="info-title">Horaires d'ouverture</div>
+              <div class="info-text">
+                Lundi - Vendredi<br />
+                9h00 - 12h30 / 14h00 - 17h30
+              </div>
+            </div>
+          </div>
+
+          <div class="info-card social-card">
+            <div class="info-content">
+              <div class="info-title">Suivez-nous</div>
+              <div class="social-links">
+                <span class="social-link">Instagram</span>
+                <span class="social-link">Facebook</span>
+                <span class="social-link">MySpace</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-left">
+          <div class="footer-socials">
+            <span>Instagram</span>
+            <span>Facebook</span>
+            <span>MySpace</span>
+          </div>
+
+          <p>
+            Loiret Nature Environnement<br />
+            est une association membre de
+          </p>
+        </div>
+
+        <div class="footer-right">
+          <p>
+            Maison de la Nature et de l'Environnement<br />
+            64, route d'Olivet<br />
+            45100 Orléans
+          </p>
+
+          <p>
+            Tél : 02 38 56 69 84<br />
+            Fax : 02 38 56 33 48
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <p>
+          Copyright © 2017 - Tous droits réservés Loiret Nature Environnement
+        </p>
+        <p>Réalisation : <span class="link">Charlotte Laffolay - SNE</span></p>
+        <p class="link">Politique de confidentialité</p>
+      </div>
+    </footer>
+  </body>
 </html>

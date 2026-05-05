@@ -1,0 +1,383 @@
+/* ==========================================================================
+   Base & Typographie
+   ========================================================================== */
+body {
+    background-color: #F9F8F2;
+    overflow-x: hidden;
+    font-family: "Figtree", sans-serif;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    color: #1a1a1a;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ==========================================================================
+   Layout Principal
+   ========================================================================== */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding-inline: clamp(1rem, 5vw, 5rem);
+    margin-inline: auto;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+/* Arrière-plan héroïque avec l'image */
+.picture {
+    position: absolute;
+    top: 0;
+    background-image: url("image.jpg"); /* Remplacez par le bon chemin */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    margin: 1rem;
+    width: calc(100% - 2rem);
+    height: 85rem;
+    z-index: -100;
+}
+
+.picture-blur {
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.40); /* Assombri pour faire ressortir le texte blanc */
+    backdrop-filter: blur(6px);
+    border-radius: 50px;
+    margin: 1rem;
+    width: calc(100% - 2rem);
+    height: 85rem;
+    z-index: -99;
+}
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+nav {
+    display: flex;
+    margin-top: 3.5rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding-inline: clamp(1rem, 5vw, 5rem);
+    font-size: 18px;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+.logo-nav {
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    background-color: #F9F8F2;
+    border-radius: 99px;
+}
+
+.main-nav {
+    background-color: #F9F8F2;
+    border-radius: 99px;
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.main-nav span {
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.main-nav span:hover {
+    text-decoration: underline;
+}
+
+.contact-nav {
+    background-color: #F9F8F2;
+    border-radius: 99px;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.contact-nav:hover {
+    background-color: #28663A;
+    color: #D7FFE3;
+}
+
+/* ==========================================================================
+   En-tête (Hero Section)
+   ========================================================================== */
+.hero-section {
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
+
+.hero-title {
+    color: #F9F8F2;
+    font-weight: 600;
+    font-size: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    line-height: 1.1;
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    opacity: 0.9;
+    line-height: 1.4;
+}
+
+/* ==========================================================================
+   Contenu de la page Contact
+   ========================================================================== */
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 4rem;
+    margin-bottom: 5rem;
+}
+
+/* -- Section Formulaire -- */
+.contact-form-wrapper {
+    width: 60%;
+}
+
+.form-card {
+    background-color: #F9F8F2;
+    padding: 3rem;
+    border-radius: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.form-row .form-group {
+    width: 50%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 1rem;
+    opacity: 0.8;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    font-family: "Figtree", sans-serif;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 1.2rem 1.5rem;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #28663A;
+    box-shadow: 0 0 0 4px rgba(40, 102, 58, 0.1);
+}
+
+.submit-btn {
+    margin-top: 1rem;
+    background-color: #28663A;
+    color: #D7FFE3;
+    border: none;
+    border-radius: 99px;
+    padding: 1.25rem 2rem;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+    font-family: "Figtree", sans-serif;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+/* -- Section Informations (Sidebar) -- */
+.contact-info {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.info-card {
+    background-color: #F9F8F2;
+    padding: 2rem;
+    border-radius: 30px;
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.info-icon {
+    font-size: 24px;
+    background-color: #ffffff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.info-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.info-text {
+    font-size: 16px;
+    opacity: 0.7;
+    line-height: 1.6;
+}
+
+/* Cartes Réseaux Sociaux */
+.social-card .info-content {
+    width: 100%;
+}
+
+.social-links {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+.social-link {
+    background-color: #ffffff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 99px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: #E8A03C; /* Reprise de l'orange de votre maquette */
+    color: #ffffff;
+    border-color: #E8A03C;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.footer {
+    margin-top: auto;
+    padding: 4rem 0 2rem 0;
+    width: calc(100% - 2rem);
+    max-width: 1400px;
+    background-color: #28663A;
+    color: #D7FFE3;
+    border-radius: 40px;
+    box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.044);
+    margin-bottom: 1rem;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-inline: 5rem;
+}
+
+.footer-left,
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    line-height: 1.6;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 2rem;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.footer-socials span {
+    cursor: pointer;
+}
+
+.footer-socials span:hover {
+    text-decoration: underline;
+}
+
+.footer-divider {
+    height: 1px;
+    background-color: rgba(215, 255, 227, 0.2); /* Ligne de séparation adaptée au fond vert */
+    margin: 3rem 5rem 2rem 5rem;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 14px;
+    opacity: 0.8;
+    padding-inline: 5rem;
+}
+
+.link {
+    text-decoration: underline;
+    cursor: pointer;
+}
